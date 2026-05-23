@@ -163,7 +163,7 @@ Clone atau upload project ke server:
 
 ```bash
 cd /var/www
-sudo git clone https://github.com/USERNAME/zy4hosting.git zy4hosting
+sudo git clone https://github.com/veruy2811/zy4hosting.git zy4hosting
 cd /var/www/zy4hosting
 ```
 
