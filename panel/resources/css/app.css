@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply bg-void text-slate-100 antialiased;
+    }
+
+    a {
+        @apply transition-colors;
+    }
+}
+
+@layer components {
+    .zy-card {
+        @apply rounded-lg border border-line/80 bg-panel2/80 shadow-glow;
+    }
+
+    .zy-input {
+        @apply w-full rounded-lg border-line bg-panel text-slate-100 placeholder:text-slate-500 focus:border-neon focus:ring-neon/30;
+    }
+
+    .zy-btn {
+        @apply inline-flex items-center justify-center gap-2 rounded-lg px-4 py-2 text-sm font-semibold transition disabled:cursor-not-allowed disabled:opacity-50;
+    }
+
+    .zy-btn-primary {
+        @apply inline-flex items-center justify-center gap-2 rounded-lg bg-neon px-4 py-2 text-sm font-semibold text-slate-950 transition hover:bg-cyan-300 disabled:cursor-not-allowed disabled:opacity-50;
+    }
+
+    .zy-btn-secondary {
+        @apply inline-flex items-center justify-center gap-2 rounded-lg border border-line bg-panel2 px-4 py-2 text-sm font-semibold text-slate-100 transition hover:border-neon/70 hover:text-neon disabled:cursor-not-allowed disabled:opacity-50;
+    }
+
+    .zy-btn-danger {
+        @apply inline-flex items-center justify-center gap-2 rounded-lg bg-rose-500 px-4 py-2 text-sm font-semibold text-white transition hover:bg-rose-400 disabled:cursor-not-allowed disabled:opacity-50;
+    }
+
+    .zy-label {
+        @apply mb-1 block text-sm font-medium text-slate-300;
+    }
+
+    .zy-table {
+        @apply min-w-full divide-y divide-line text-sm;
+    }
+
+    .zy-table th {
+        @apply px-4 py-3 text-left text-xs font-semibold uppercase tracking-wide text-slate-400;
+    }
+
+    .zy-table td {
+        @apply px-4 py-3 text-slate-200;
+    }
+}
